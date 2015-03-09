@@ -1,0 +1,34 @@
+[user]
+    name = Andrea Riciputi
+    email = andrea.riciputi@gmail.com
+
+[push]
+	default = simple
+
+[alias]
+    st = status
+
+[color "diff"]
+   meta = yellow
+   frag = magenta
+   old = red
+   new = green
+
+[color "branch"]
+   current = yellow reverse
+   local = yellow
+   remote = green
+
+[color "status"]
+   added = yellow
+   changed = green
+   untracked = cyan
+
+[pretty]
+   # Custom log output
+   custom = "%C(yellow)%h%C(auto)%d %C(dim white)%ad %Creset%s %C(blue)[%an]"
+   #                    │         │               │          │     author ┘
+   #                    │         │               │          └─ message
+   #                    │         │               └─ date
+   #                    │         └─ decorations (branch, heads or tags)
+   #                    └─ hash (abbreviated)
